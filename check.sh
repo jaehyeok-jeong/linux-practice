@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# EC2 인스턴스 상태 점검 스크립트
 
 HOST=$(hostname)
 NOW=$(date '+%Y-%m-%d %H:%M')
