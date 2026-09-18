@@ -19,6 +19,16 @@ echo "--- 방화벽 설정 ---"
 sudo ufw allow OpenSSH
 sudo ufw --force enable
 
+echo "--- 셸 설정 ---"
+cat > ~/.bash_aliases << 'ALIASEOF'
+export EDITOR=vim
+alias ll='ls -la'
+alias ..='cd ..'
+alias lp='cd ~/linux-practice'
+alias gs='git status'
+alias gl='git log --oneline'
+ALIASEOF
+
 echo ""
 echo "=== 완료 ==="
 echo "docker 그룹 적용을 위해 재접속이 필요합니다."
